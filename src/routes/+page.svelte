@@ -1,8 +1,7 @@
 <script>
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import welcome from '$lib/images/svelte-welcome.webp';
 	import Counter from './Counter.svelte';
-	import Sidemenu from './sidemenu.svelte';
+	import welcome from '$lib/images/svelte-welcome.webp';
+	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
@@ -10,29 +9,24 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div id="layout-container">
-	<div class="sidemenu">
-		<Sidemenu />
-	</div>
-	<section>
-		<h1>
-			<span class="welcome">
-				<picture>
-					<source srcset={welcome} type="image/webp" />
-					<img src={welcome_fallback} alt="Welcome" />
-				</picture>
-			</span>
+<section>
+	<h1>
+		<span class="welcome">
+			<picture>
+				<source srcset={welcome} type="image/webp" />
+				<img src={welcome_fallback} alt="Welcome" />
+			</picture>
+		</span>
 
-			to your new<br />SvelteKit app
-		</h1>
+		to your new<br />SvelteKit app
+	</h1>
 
-		<h2>
-			try editing <strong>src/routes/+page.svelte</strong>
-		</h2>
+	<h2>
+		try editing <strong>src/routes/+page.svelte</strong>
+	</h2>
 
-		<Counter />
-	</section>
-</div>
+	<Counter />
+</section>
 
 <style>
 	section {
