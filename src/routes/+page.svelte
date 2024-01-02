@@ -2,7 +2,7 @@
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import Counter from './Counter.svelte';
-	import Sidemenu from './sidemenu.svelte';
+	import Sidemenu from './sidebar.svelte';
 </script>
 
 <svelte:head>
