@@ -20,5 +20,5 @@
 </div>
 
 <style>
-	@import './sidemenu.css';
+	@import './sidebar.css';
 </style>
